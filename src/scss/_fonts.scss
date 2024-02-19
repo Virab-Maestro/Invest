@@ -1,4 +1,5 @@
-@use "./mixins";
+@use './mixins';
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400&display=swap');
 
-// @include font-face("Arial", "ArialBold", 700);
+@include mixins.font-face("Gilroy", "gilroy-medium", 500);
 // @include font-face("Arial", "ArialItalic", 400, italic);
