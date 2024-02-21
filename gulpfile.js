@@ -12,6 +12,7 @@ exports.webp = tasks.webp;
 exports.ttf = tasks.ttf;
 exports.fonts = tasks.fonts;
 exports.bs_html = tasks.bs_html;
+exports.live = tasks.live;
 exports.watch = tasks.watch;
 
 exports.default = gulp.parallel(
@@ -23,6 +24,7 @@ exports.default = gulp.parallel(
 	exports.ttf = tasks.ttf,
 	exports.fonts = tasks.fonts,
 	exports.html,
-	exports.bs_html,
+	// exports.bs_html,
+	exports.live = tasks.live,
 	exports.watch
 )

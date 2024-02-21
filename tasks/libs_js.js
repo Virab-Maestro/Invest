@@ -14,5 +14,5 @@ module.exports = function libs_js(done) {
         .pipe(concat('libs.min.js'))
         .pipe(map.write('../sourcemaps'))
         .pipe(dest('build/js/'))
-        .pipe(bs.stream())
+        // .pipe(bs.stream())
 }

@@ -9,5 +9,5 @@ module.exports = function html() {
 	return src(['src/**/*.html', '!src/components/**/*.html'])
 		.pipe(include())
 		.pipe(dest('build'))
-    .pipe(bs.stream())
+    // .pipe(bs.stream())
 }
