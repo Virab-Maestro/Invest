@@ -1,5 +1,6 @@
 @use "./fonts";
 @use "./normalize";
+@use './mixins';
 @use "./base/global.scss";
 
 
@@ -65,16 +66,7 @@
 
     //before,after
     &::before, &::after{
-        content:"";
-        position: absolute;
-        width: 540px;
-        height: 540px;
-        border-radius: 50%;
-        background-color: #00BB6A;
-        filter: blur(100px);
-        box-shadow: 500px 0px 500px #00bb6a;
-        opacity: .4;
-        z-index: 1;
+        @include mixins.circle;
     }
     &::before{
         top: 40%;
@@ -88,6 +80,7 @@
 
 .conditions{
     padding-top: 160px;
+    position: relative;
     &__list{
         display: flex;
         justify-content: space-between;
@@ -98,8 +91,6 @@
         // variables
         --border-width: 2px;
         --border-radius: 40px;
-        --color-1: #f19f39;
-        --color-2: #de222c;
 
         position: relative;
         width: 560px;
@@ -162,5 +153,81 @@
         text-shadow: 2px 2px 11px #00BB6A;
     }
     
+    // Circles
+    &::before{
+        @include mixins.circle;
+        right: -50px;
+        top: 55%;
+    }
 }
 
+.steps{
+    position: relative;
+    &__inner{
+        padding-top: 200px;
+    }
+    &__list{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &__item{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+    }
+    &__item:first-child, &__item:nth-child(2){
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 18px;
+            right: -178px;
+            width: 340px;
+            height: 7px;
+            background-image: url('../img/arrow.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__item:last-child &__item-box{
+        background: linear-gradient(#1D1528, #1D1528) padding-box,linear-gradient(to bottom, rgba(151, 71, 255, 1), rgba(151, 71, 255, 0)) border-box;
+    }
+    &__item:last-child &__item-count{
+        background: rgba(151, 71, 255, .1);
+        color: #9747FF;
+    }
+    &__item-count{
+        font-size: 20px;
+        padding-top: 10px;
+        text-align: center;
+        color: #00BB6A;
+        width: 45px;
+        height: 45px;
+        background: rgba(0,187,106, .1);
+        border-radius: 50%;
+    }
+    &__item-box{
+        height: 177px;
+        padding: 30px 25px 35px 25px;
+
+        background: linear-gradient(#0E2018, #0E2018) padding-box,linear-gradient(to bottom, rgba(0, 187, 106, 1), rgba(0, 187, 106, 0)) border-box;
+        border: 1px solid transparent;
+        border-radius: 40px;    
+    }
+    &__item-title{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    &__item-text{
+        font-family: "Gilroy";
+        max-width: 320px;
+        text-align: center;
+        opacity: .7;
+    }
+
+    // steps background image
+}
