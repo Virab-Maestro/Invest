@@ -156,7 +156,7 @@
     // Circles
     &::before{
         @include mixins.circle;
-        right: -50px;
+        right: -250px;
         top: 55%;
     }
 }
@@ -230,4 +230,62 @@
     }
 
     // steps background image
+    &__bg{
+        position: absolute;
+        top: 60%;
+        left: 0;
+        right: 0;
+    }
+    &__bg-inner{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 160px;
+            background: #000;
+            filter: blur(45px);
+            bottom: -55px;
+        }
+        &::after{
+            @include mixins.circle(1865px, 545px, 50%, .15, 0px -50px 0px 505px #00bb6a, 5);
+            left: 0;
+            right: 0;
+        }
+    }
+    &__bg-img{
+        width: 100%;
+        height: 650px;
+    }
+}
+
+.why{
+    margin-top: -50px;
+    &__inner{
+        position: relative;
+        z-index: 10;
+        padding-top: 200px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+    }
+    &__item{
+        width: 30%;
+        margin-bottom: 60px;
+    }
+    &__item-title{
+        font-size: 20px;
+        color: #00BB6A;
+        margin-bottom: 15px;
+        max-width: 380px;
+    }
+    &__item-text{
+        font-family: "Gilroy";
+        max-width: 260px;
+    }
 }
