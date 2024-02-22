@@ -20,14 +20,16 @@ body{
     margin: 0 auto;
 }
 
-.btn{
+.link{
     display: flex;
+    justify-content: center;
+    text-align: center;
     align-items: center;
     gap: 10px;
     width: 97%;
     background: linear-gradient(to right, #00BB6A, #08653D);
     border-radius: 60px;
-    padding: 22px 100px;
+    padding: 22px;
     margin-top: 40px;
     border: none;
     outline: none;
@@ -122,9 +124,8 @@ body{
 }
 .title{
     max-width: 750px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     text-align: center;
-    margin-bottom: 40px;
     font-size: 50px;
     -webkit-background-clip: text;
     background-clip: text;
