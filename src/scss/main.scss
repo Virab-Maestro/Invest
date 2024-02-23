@@ -10,11 +10,6 @@
         display: flex;
         justify-content: space-between;
     }
-    &__logo{
-        font-size: 30px;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
     &__interface{
         display: flex;
         gap: 15px;
@@ -377,8 +372,35 @@
 }
 
 .footer{
-    &__top{}
-    &__copy{
-        
+    padding-top: 70px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 20px;
     }
+    &__soclist{
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    &__info{
+        font-family: "Gilroy";
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 30px;
+        p{opacity: .7;}
+    }
+    &__copy{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    &__copy-text{
+        font-family: "Gilroy";
+        opacity: .7;
+    }
+
 }
