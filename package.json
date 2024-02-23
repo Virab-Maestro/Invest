@@ -35,5 +35,12 @@
     "live-server": "^1.2.2",
     "require-dir": "^1.2.0",
     "sass": "^1.71.0"
+  },
+  "dependencies": {
+    "i": "^0.3.7",
+    "i18next": "^23.10.0",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "jquery-i18next": "^1.2.1",
+    "npm": "^10.4.0"
   }
 }
