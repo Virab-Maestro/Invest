@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     
+    // castomizing the header select
     function dropdownOption (state) {
         if (!state.id) {
             return state.text;
@@ -10,8 +11,6 @@ $( document ).ready(function() {
         );
         return $state;
     };
-
-    
 
     function selectedResult (state) {
         if (!state.id) {
@@ -34,4 +33,20 @@ $( document ).ready(function() {
         templateResult: dropdownOption,
         templateSelection: selectedResult
     });
+
+    // Track the selected language
+    $('.header__interface-lang').on("change", ()=>{
+        const lang = $('.header__interface-lang').val();
+        let abbr = "en";
+        switch(lang){
+            case 'russian':
+                abbr="ru";
+                break;
+            case 'english':
+                abbr="en";
+                break;
+        }
+        i18next.changeLanguage(abbr);
+        $('body').localize();
+    })
 });
