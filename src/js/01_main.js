@@ -49,4 +49,24 @@ $( document ).ready(function() {
         i18next.changeLanguage(abbr);
         $('body').localize();
     })
+
+    // Translate Implementaion
+    // use plugins and options as needed, for options, detail see
+    i18next
+    // detect user language
+    .use(i18nextBrowserLanguageDetector)
+    // init i18next
+    .init({
+        debug: true,
+        fallbackLng: 'ru',
+        resources: translations
+    }, (err, t) => {
+        if (err) return console.error(err);
+
+        // for options see
+        jqueryI18next.init(i18next, $, { useOptionsAttr: true });
+
+        // start localizing, details:
+        $('body').localize();
+    });
 });
