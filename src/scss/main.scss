@@ -363,3 +363,15 @@
         opacity: .7;
     }
 }
+
+.warning{
+    padding-top: 200px;
+    &__title{
+        max-width: 650px;
+        margin-bottom: 15px;
+    }
+    &__text{
+        font-family: "Gilroy";
+        opacity: .7;
+    }
+}
