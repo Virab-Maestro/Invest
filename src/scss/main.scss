@@ -57,6 +57,10 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: linear-gradient(180deg, rgba(0,187,106,1) 0%, rgba(0,187,106,1) 100%, rgba(0,187,106,1) 0%);
+        transition-delay: 200ms;
+    }
+    &__info-link{
+        transition-delay: 250ms;
     }
 
     //before,after
@@ -126,8 +130,13 @@
         }
 
         &:nth-child(even){
-            transform: translateY(50px);
+            transform: translate(100%, 50px);
         }
+    }
+    &__item.animation-show{
+        opacity: 1;
+        filter: blur(0px);
+        transform: translate(0, 50px);
     }
     &__item-title{
         max-width: 250px;
@@ -240,7 +249,7 @@
             width: 100%;
             height: 160px;
             background: #000;
-            filter: blur(45px);
+            filter: blur(57px);
             bottom: -55px;
         }
         &::after{

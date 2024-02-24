@@ -69,4 +69,20 @@ $( document ).ready(function() {
         // start localizing, details:
         $('body').localize();
     });
+
+    //Animations
+
+    const animatedElements = document.querySelectorAll('.animation-hide');
+
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                $(entry.target).addClass('animation-show');
+            }
+        })
+    })
+
+    animatedElements.forEach(el=>{
+        observer.observe(el);
+    })
 });

@@ -138,3 +138,20 @@ body{
     text-transform: uppercase;
     cursor: pointer;
 }
+// Animation on scrolling
+.animation-hide, .animation-to-left, .animation-to-right, .animation-to-bottom, .animation-to-top{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all .5s;
+}
+.animation-to-left{transform: translateX(100%);}
+.animation-to-right{transform: translateX(-100%);}
+.animation-to-bottom{transform: translateY(100%);}
+.animation-to-bottom{transform: translateY(-100%);}
+
+.animation-show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(0, 0);
+}
+// .animation-show{}
