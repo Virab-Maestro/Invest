@@ -1,7 +1,8 @@
-@use "./fonts";
-@use "./normalize";
-@use './mixins';
+@use "./base/fonts";
+@use "./base/normalize";
+@use './base/mixins';
 @use "./base/global.scss";
+@use "./media.scss";
 
 
 .header{
@@ -28,8 +29,6 @@
         cursor: pointer;
         transition: all .3s;
         &:hover{
-            -webkit-box-shadow: 6px 3px 7px 1px rgba(0,187,106,1);
-            -moz-box-shadow: 6px 3px 7px 1px rgba(0,187,106,1);
             box-shadow: 6px 3px 7px 1px rgba(0,187,106,1);
         }
     }

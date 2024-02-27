@@ -1,0 +1,36 @@
+@media(max-width: 1536px){}
+@media(max-width: 1280px){}
+@media(max-width: 1024px){}
+@media(max-width: 768px){}
+@media(max-width: 640px){
+    .select2{
+        &-container{ //block width
+            width: 123px!important;
+        }
+        &-container &-selection--single &-selection__rendered{ //inner padding
+            padding: 5px 3px 0 5px;
+        }
+        &-selection__rendered span{ //between flag and lang
+            gap: 5px;
+        }
+        &-container--default &-selection--single &-selection__arrow{ //arrow    
+            right: 3px;
+        }
+        &-container--default &-selection--single:hover{
+            box-shadow: 4px 4px 5px -1px #00bb6a;
+        }
+    }
+    .header{
+        &__interface{
+            gap: 5px;
+        }
+        .header__interface-auth{
+            width: 84px;
+            padding: 12px 14px;
+            &:hover{
+                box-shadow: 4px 4px 5px -1px #00bb6a;
+            }
+        }
+    }
+}
+// @media(max-width: 480px){}

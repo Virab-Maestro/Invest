@@ -26,7 +26,7 @@ body{
     text-align: center;
     align-items: center;
     gap: 10px;
-    width: 97%;
+    width: 98%;
     background: linear-gradient(to right, #00BB6A, #08653D);
     border-radius: 60px;
     padding: 22px;
@@ -50,7 +50,7 @@ body{
 }
 .select2{
     &-container{
-        width: 180px !important; // selector wrapper
+        width: 166px !important; // selector wrapper
     }
     &-container--default &-selection--single { // selector wrapper
         background-color: transparent;
