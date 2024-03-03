@@ -276,7 +276,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 50px;
+        gap: 47px;
     }
     &__item{
         width: 30%;
@@ -284,6 +284,7 @@
     }
     &__item-title{
         font-size: 20px;
+        font-weight: 400;
         color: #00BB6A;
         margin-bottom: 15px;
         max-width: 380px;
