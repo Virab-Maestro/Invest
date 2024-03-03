@@ -92,6 +92,7 @@
 
         position: relative;
         width: 560px;
+        height: auto;
         margin-bottom: 30px;
         padding: 40px 55px 40px 25px;
 
@@ -127,18 +128,15 @@
             border-bottom-right-radius: var(--border-radius);
             border-left-color: transparent;
         }
-
-        &:nth-child(even){
-            transform: translate(100%, 50px);
-        }
     }
-    &__item.animation-show{
+    &__item:nth-child(even).animation-show{
         opacity: 1;
         filter: blur(0px);
         transform: translate(0, 50px);
+        transition-delay: 200ms;
     }
     &__item-title{
-        max-width: 250px;
+        max-width: 400px;
         font-size: 20px;
         margin-bottom: 18px;
     }
@@ -160,7 +158,9 @@
     &::before{
         @include mixins.circle;
         right: -250px;
-        top: 55%;
+        top: 21%;
+        opacity: 0.25;
+        height: 940px;
     }
 }
 
