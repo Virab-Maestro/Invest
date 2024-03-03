@@ -171,7 +171,7 @@
     }
     &__list{
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 20px;
     }
     &__item{
@@ -186,13 +186,13 @@
         &::before{
             content: '';
             position: absolute;
-            top: 18px;
-            right: -178px;
-            width: 340px;
+            top: 14px;
+            right: -59%;
+            width: 100%;
             height: 7px;
             background-image: url('../img/arrow.svg');
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
         }
     }
     &__item:last-child &__item-box{
@@ -204,7 +204,7 @@
     }
     &__item-count{
         font-size: 20px;
-        padding-top: 10px;
+        padding-top: 5px; //10
         text-align: center;
         color: #00BB6A;
         width: 45px;
@@ -213,7 +213,8 @@
         border-radius: 50%;
     }
     &__item-box{
-        height: 177px;
+        height: 100%;
+        // max-height: 177px;
         padding: 30px 25px 35px 25px;
 
         background: linear-gradient(#0E2018, #0E2018) padding-box,linear-gradient(to bottom, rgba(0, 187, 106, 1), rgba(0, 187, 106, 0)) border-box;
