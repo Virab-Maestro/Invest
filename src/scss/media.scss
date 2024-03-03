@@ -98,6 +98,30 @@
             width: 48%;
         }
     }
+    .install{
+        &__title{
+            margin-bottom: 15px!important;
+        }
+        &__text{
+            margin-bottom: 30px;
+        }
+        &__img img{
+            width: 888px;
+        }
+        &__img-link{
+            top: 51%;
+            left: 6%;
+        }
+        &__link{
+            font-size: 16px;
+            padding: 6px 40px;
+            gap: 5px;
+            width: 285px;
+        }
+        &__link span{
+            
+        }
+    }
     .link span {
         font-size: 13px;
     }
@@ -114,12 +138,33 @@
             left: -94%;
         }
     }
+    .steps__bg-inner::after{
+        display: none;
+    }
     .conditions{
         &__item{
             width: 294px;
         }
         &__item-title{
             max-width: 185px;
+        }
+    }
+    .install{
+        &__inner{
+            flex-direction: column;
+            gap: 0;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__text{
+            text-align: center;
+        }
+        &__img img {
+            margin-right: -300px;
+        }
+        &__link{
+            margin: 0 auto;
         }
     }
     .title{
@@ -241,6 +286,11 @@
         }
         &__item-text{
             max-width: 100%;
+        }
+    }
+    .install{
+        &__img img {
+            margin-right: -489px;
         }
     }
     .link{
