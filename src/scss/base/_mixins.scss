@@ -17,9 +17,10 @@
 	height: $height;
 	border-radius: $radius;
 	background-color: #00BB6A;
-	filter: blur(100px);
-	box-shadow: $shadow;
+	filter: blur(145px);
+	// box-shadow: $shadow;
 	// 0px -50px 0px 505px #00bb6a
 	opacity: $opacity;
 	z-index: $z;
+	opacity: .4;
 }

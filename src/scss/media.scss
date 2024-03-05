@@ -3,6 +3,10 @@
         &__img img {
             margin-left: -350px;
         }
+        &::before{
+            top: 33%;
+            left: 0;
+        }
         &::after{
             right: -20%;
         }
@@ -15,7 +19,7 @@
         }
         &::before {
             top: 20%;
-            left: -40%;
+            // left: -40%;
         }
         &::after {
             display: none;
@@ -52,8 +56,8 @@
             height: 367px;
         }
         &::before {
-            top: -20%;
-            left: -56%;
+            top: -10%;
+            left: -23%;
         }
     }
     .conditions{
@@ -88,6 +92,7 @@
         }
     }
     .why{
+        margin-top: 65px;
         &__list{
             max-width: 610px;
             justify-content: flex-start;
@@ -124,6 +129,9 @@
             flex-direction: column-reverse;
             gap: 72px;
         }
+        &__inner::before{
+            left: 20%;
+        }
         &__info-title{
             margin-bottom: 25px;
         }
@@ -133,6 +141,9 @@
         &__info-link{
             width: 300px;
             margin-top: 30px;
+        }
+        &__img img{
+            max-width: 100%;
         }
     }
     .link span {
@@ -148,11 +159,10 @@
             margin-left: -210px;
         }
         &::before {
-            left: -94%;
+            left: -30%;
         }
     }
     .steps__bg-inner::after{
-        display: none;
     }
     .conditions{
         &__item{
@@ -184,6 +194,20 @@
     .ad{
         &__inner{
             padding-top: 120px;
+        }
+    }
+    .warning{
+        padding-top: 120px;
+        &__title{
+            font-size: 16px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+    }
+    .footer{
+        &__info p{
+            font-size: 14px;
         }
     }
     .title{
@@ -256,6 +280,10 @@
         &__item:nth-child(even).animation-show{
             transform: translate(0);
         }
+        &::before{
+            right: -420px;
+            top: 32%;
+        }
     }
     .steps{
         &__list{
@@ -316,6 +344,10 @@
         &__inner{
             gap: 65px;
         }
+        &__inner::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
         &__info{
             text-align: center;
         }
@@ -329,6 +361,9 @@
         &__info-link{
             margin: 35px auto 0;
         }
+    }
+    .footer{
+        padding-top: 50px;
     }
     .link{
         padding: 17px 22px 17px;
