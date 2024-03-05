@@ -142,16 +142,16 @@ body{
 .animation-hide, .animation-to-left, .animation-to-right, .animation-to-bottom, .animation-to-top{
     opacity: 0;
     filter: blur(5px);
-    transition: all .5s;
+    transition: all .5s .25s;
 }
 .animation-to-left{transform: translateX(100%);}
 .animation-to-right{transform: translateX(-100%);}
-.animation-to-bottom{transform: translateY(100%);}
+.animation-to-top{transform: translateY(100%);}
 .animation-to-bottom{transform: translateY(-100%);}
 
 .animation-show{
-    opacity: 1;
-    filter: blur(0px);
-    transform: translate(0, 0);
+    opacity: 1 !important;
+    filter: blur(0px) !important;
+    transform: translate(0, 0) !important;
 }
 // .animation-show{}

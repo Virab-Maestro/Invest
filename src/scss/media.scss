@@ -133,7 +133,7 @@
             left: 20%;
         }
         &__info-title{
-            margin-bottom: 25px;
+            margin: 0 0 25px 0;
         }
         &__info-text{
             font-size: 20px;
@@ -145,6 +145,8 @@
         &__img img{
             max-width: 100%;
         }
+        &__img.animation-to-right{transform: translateY(-100%);}
+        &__info.animation-to-left{transform: translateY(-100%);}
     }
     .link span {
         font-size: 13px;
@@ -291,7 +293,9 @@
             align-items: center;
             gap: 127px;
         }
-        &__item{}
+        &__item.animation-to-right{
+            transform: translateY(-100%);
+        }
         &__item:first-child::before, &__item:nth-child(2)::before{
             width: 87px;
             top: auto;
