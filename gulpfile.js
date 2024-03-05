@@ -14,6 +14,7 @@ exports.fonts = tasks.fonts;
 exports.bs_html = tasks.bs_html;
 exports.live = tasks.live;
 exports.watch = tasks.watch;
+exports.deploy = tasks.deploy_build;
 
 exports.default = gulp.parallel(
 	exports.style,
