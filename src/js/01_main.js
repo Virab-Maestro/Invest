@@ -5,7 +5,7 @@ $( document ).ready(function() {
         if (!state.id) {
             return state.text;
         }
-        var baseUrl = "../img";
+        var baseUrl = "./img";
         var $state = $(
             '<span><img class="select2-option-img" src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
         );
@@ -17,7 +17,7 @@ $( document ).ready(function() {
         return state.text;
         }
     
-        var baseUrl = "../img";
+        var baseUrl = "./img";
         var $state = $(
         '<span><img class="img-flag" /> <span></span></span>'
         );

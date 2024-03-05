@@ -4,8 +4,10 @@
   "description": "its too simple",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://virab-maestro.github.io/invest",
   "author": "Virab-Maestro",
   "license": "ISC",
   "devDependencies": {
@@ -13,6 +15,7 @@
     "@babel/preset-env": "^7.23.9",
     "browser-sync": "^3.0.2",
     "chalk": "^4.0.0",
+    "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-babel": "^8.0.0",
