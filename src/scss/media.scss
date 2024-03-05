@@ -118,8 +118,21 @@
             gap: 5px;
             width: 285px;
         }
-        &__link span{
-            
+    }
+    .ad{
+        &__inner{
+            flex-direction: column-reverse;
+            gap: 72px;
+        }
+        &__info-title{
+            margin-bottom: 25px;
+        }
+        &__info-text{
+            font-size: 20px;
+        }
+        &__info-link{
+            width: 300px;
+            margin-top: 30px;
         }
     }
     .link span {
@@ -166,6 +179,11 @@
         }
         &__link{
             margin: 0 auto;
+        }
+    }
+    .ad{
+        &__inner{
+            padding-top: 120px;
         }
     }
     .title{
@@ -292,6 +310,24 @@
     .install{
         &__img img {
             margin-right: -489px;
+        }
+    }
+    .ad{
+        &__inner{
+            gap: 65px;
+        }
+        &__info{
+            text-align: center;
+        }
+        &__info-title{
+            text-align: center;
+        }
+        &__info-text{
+            text-align: center;
+            font-size: 18px;
+        }
+        &__info-link{
+            margin: 35px auto 0;
         }
     }
     .link{
