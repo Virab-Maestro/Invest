@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest Test Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="header__nav">
+                    <a class="logo" href="#">logo</a>
+                    <div class="header__interface">
+                        <select class="header__interface-lang">
+                            <option value="english">English</option>
+                            <option value="russian">Russian</option>
+                        </select>
+                        <button class="header__interface-auth" data-i18n="common.auth">Войти</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="review">
+                <div class="container-large">
+                    <div class="review__inner">
+                        <div class="review__img animation-hide animation-to-right">
+                            <picture>
+                                <source srcset="img/main-laptop.webp" media="(max-width: 1024px)" />
+                                <img src="img/main.webp" alt="main-review-img">
+                            </picture>
+                        </div>
+                        <div class="review__info">
+                            <span class="review__info-title title animation-hide animation-to-left" data-i18n="review.title">Специальные условия для трейдеров из Гонконга</span>
+                            <a class="review__info-link link animation-hide animation-to-left" href="https://www.investing.com/">
+                                <span data-i18n="common.btn">НАЧАТЬ ТОРГОВЛЮ В ОДИН КЛИК</span>
+                                <img src="img/fingerprint.svg" alt="button-fingerprint">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="conditions">
+                <div class="container">
+                    <div class="conditions__inner">
+                        <h2 class="conditions__title title animation-hide animation-to-bottom" data-i18n="conditions.title">Our conditions</h2>
+                        <div class="conditions__list">
+                            <div class="conditions__item animation-hide animation-to-right">
+                                <h3 class="conditions__item-title" data-i18n="conditions.firstTitle">$1 Min investment</h3>
+                                <p class="conditions__item-text" data-i18n="conditions.firstText">Start your trading career with the minimal investment of just $1. Generate profits without the risk of losing large investments. Available trade order amount varies from $1 to $5000.</p>
+                                <span class="conditions__item-count">1</span>
+                            </div>
+                            <div class="conditions__item animation-hide animation-to-left">
+                                <h3 class="conditions__item-title" data-i18n="conditions.secondTitle">50% бонус on the first deposit</h3>
+                                <p class="conditions__item-text" data-i18n="conditions.secondText">Get an extra 50% bonus to your trading account balance for your deposit over $50. Deposit bonus is a gift amount that you can use for trading and generating profit.</p>
+                                <span class="conditions__item-count">2</span>
+                            </div>
+                            <div class="conditions__item animation-hide animation-to-right">
+                                <h3 class="conditions__item-title" data-i18n="conditions.thirdTitle">RISK-FREE trades</h3>
+                                <p class="conditions__item-text" data-i18n="conditions.thirdText">Deposit $100 or more and automatically receive a $10 risk-free. The bonus allows you to cancel any lost non-hedged trade up to $10. The funds are instantly returned to the trading account balance.</p>
+                                <span class="conditions__item-count">3</span>
+                                </div>
+                            <div class="conditions__item animation-hide animation-to-left">
+                                <h3 class="conditions__item-title" data-i18n="conditions.fourthTitle">NO FEES on deposits and withdrawals</h3>
+                                <p class="conditions__item-text" data-i18n="conditions.fourthText">More than 50 payment methods available for depositing and withdrawal. Fast transaction processing, 0% platform fees. All you need for hassle-free trading.</p>
+                                <span class="conditions__item-count">4</span>
+                            </div>
+                            <div class="conditions__item animation-hide animation-to-right">
+                                <h3 class="conditions__item-title" data-i18n="conditions.fifthTitle">HONG KONG friendly</h3>
+                                <p class="conditions__item-text" data-i18n="conditions.fifthText">You can always get a quick and professional support. Create a support ticket, send an email or even make an old-fashioned phone call to get assistance.</p>
+                                <span class="conditions__item-count">5</span>
+                            </div>
+                            <div class="conditions__item animation-hide animation-to-left">
+                                <h3 class="conditions__item-title" data-i18n="conditions.sixthTitle">CUTTING-EDGE platform</h3>
+                                <p class="conditions__item-text" data-i18n="conditions.sixthText">Be among the PRO-traders who opt for modern, dynamic leading trading platform with a lot of innovations and unique features. Social trading, strike-price, express-trades.</p>
+                                <span class="conditions__item-count">6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="steps">
+                <div class="container">
+                    <div class="steps__inner">
+                        <h2 class="stes__title title animation-hide animation-to-bottom" data-i18n="steps.title">Начните с нескольких простых шагов</h2>
+                        <div class="steps__list">
+                            <div class="steps__item animation-hide animation-to-right">
+                                <span class="steps__item-count">1</span>
+                                <div class="steps__item-box">
+                                    <h4 class="steps__item-title" data-i18n="steps.step1Title">Регистрация</h4>
+                                    <p class="steps__item-text" data-i18n="steps.step1Text">E-posta adresiniz veya Facebook ve Google+ hesaplarınızı kullanarak ücretsiz hesap oluşturun.</p>
+                                </div>
+                            </div>
+                            <div class="steps__item animation-hide animation-to-right">
+                                <span class="steps__item-count">2</span>
+                                <div class="steps__item-box">
+                                    <h4 class="steps__item-title" data-i18n="steps.step2Title">Explore the platform</h4>
+                                    <p class="steps__item-text" data-i18n="steps.step2Text">See what it’s like to earn on financial markets without investing own money using DEMO-account with a $50000 virtual balance.</p>
+                                </div>
+                            </div>
+                            <div class="steps__item animation-hide animation-to-right">
+                                <span class="steps__item-count">3</span>
+                                <div class="steps__item-box">
+                                    <h4 class="steps__item-title" data-i18n="steps.step3Title">Начать зарабатывать</h4>
+                                    <p class="steps__item-text" data-i18n="steps.step3Text">Start making profits with our special trading conditions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps__bg">
+                    <div class="steps__bg-inner">
+                        <img class="steps__bg-img" src="./img/steps.webp" alt="steps-bg">
+                    </div>
+                </div>
+            </section>
+
+            <section class="why">
+                <div class="container">
+                    <div class="why__inner">
+                        <h2 class="why__title title" data-i18n="why.title">Why choose Pocket Option?</h2>
+                        <ul class="why__list">
+                            <li class="why__item">
+                                <h3 class="why__item-title" data-i18n="why.why1Title">Trading made easy</h3>
+                                <p class="why__item-text" data-i18n="why.why1Text">A supreme choice for online trading on financial markets.</p>
+                            </li>
+                            <li class="why__item">
+                                <h3 class="why__item-title" data-i18n="why.why2Title">Customizable interface</h3>
+                                <p class="why__item-text" data-i18n="why.why2Text">Customize the platform to make it better fit to your needs — from chart type to color theme.</p>
+                            </li>
+                            <li class="why__item">
+                                <h3 class="why__item-title" data-i18n="why.why3Title">Support 24/7</h3>
+                                <p class="why__item-text" data-i18n="why.why3Text">A team of professionals are always ready to assist you.</p>
+                            </li>
+                            <li class="why__item">
+                                <h3 class="why__item-title" data-i18n="why.why4Title">Демо-счет</h3>
+                                <p class="why__item-text" data-i18n="why.why4Text">Try all the platform benefits on the Demo account with $50000 virtual money.</p>
+                            </li>
+                            <li class="why__item">
+                                <h3 class="why__item-title" data-i18n="why.why5Title">Smooth Trading</h3>
+                                <p class="why__item-text" data-i18n="why.why5Text">Customize the platform to make it better fit to your needs — from chart type to color theme.</p>
+                            </li>
+                            <li class="why__item">
+                                <h3 class="why__item-title" data-i18n="why.why6Title">Высокая лояльность клиентам</h3>
+                                <p class="why__item-text" data-i18n="why.why6Text">Tournaments, lottery, regular bonuses, promo codes and many more.</p>
+                            </li>
+                            <li class="why__item">
+                                <h3 class="why__item-title" data-i18n="why.why7Title">Passive Income</h3>
+                                <p class="why__item-text" data-i18n="why.why7Text">Copy trades of the PRO-users automatically. Earn with the best.</p>
+                            </li>
+                            <li class="why__item">
+                                <h3 class="why__item-title" data-i18n="why.why8Title">Innovative Platform</h3>
+                                <p class="why__item-text" data-i18n="why.why8Text">Forex MT5, Expresses Trades, Strike price, Pending Trades, Achievements.</p>
+                            </li>
+                            <li class="why__item">
+                                <h3 class="why__item-title" data-i18n="why.why9Title">Truly Social</h3>
+                                <p class="why__item-text" data-i18n="why.why9Text">Communicate with traders around the world on the built-in chats.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="install">
+                <div class="container-large">
+                    <div class="install__inner">
+                        <div class="install__info">
+                            <h2 class="install__title title" data-i18n="install.title">Установите наши приложения</h2>
+                            <p class="install__text" data-i18n="install.text">and enjoy comfortable trading sessions at your fingertips anywhere you go!</p>
+                            <a class="install__link" href="https://play.google.com/store/apps/details?id=com.fusionmedia.investing">
+                                <img src="./img/google-play.svg" alt="google-play-icon">
+                                <div data-i18n="install.btn1">Скачать в GOOGLE PLAY</div>
+                            </a>
+                        </div>
+                        <div class="install__img">
+                            <img src="./img/install-section.webp" alt="install-img">
+                            <a class="install__img-link link animation-hide animation-to-top" href="https://www.investing.com/">
+                                <span data-i18n="install.btn2">WITHDRAW NOW</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ad">
+                <div class="container">
+                    <div class="ad__inner">
+                        <div class="ad__img animation-hide animation-to-right"><img src="./img/ad-img.webp" alt="ad-img"></div>
+                        <div class="ad__info animation-hide animation-to-left">
+                            <h2 class="ad__info-title title" data-i18n="ad.title">Правильное место для онлайн-торговли на финансовых рынках</h2>
+                            <p class="ad__info-text" data-i18n="ad.text">The most convenient trading interface. Instant access to more than 100 assets of the world's leading companies.</p>
+                            <a class="ad__info-link link" href="https://www.investing.com/">
+                                <span data-i18n="common.btn">НАЧАТЬ ТОРГОВЛЮ В ОДИН КЛИК</span>
+                                <img src="img/fingerprint.svg" alt="button-fingerprint">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="warning">
+                <div class="container">
+                    <h3 class="warning__title" data-i18n="warning.title">ПРЕДУПРЕЖДЕНИЕ О РИСКАХ:</h3>
+                    <p class="warning__text" data-i18n="warning.text">Торговля на финансовых рынках сопряжена с риском. Forex и другие финансовые контракты являются сложными финансовыми инструментами, используемыми для маржинальной торговли. Торговля имеет высокий уровень риска, так как кредитное плечо может работать как в Вашу пользу, так и против Вас. Вследствие этого торговля подходит не всем инвесторам из-за высокого риска потери инвестированного капитала. Вы не должны рисковать большими средствами, чем Вы готовы потерять. Перед началом торговли Вы должны убедиться, что Вы понимаете все риски и учитываете их в совокупности с уровнем Вашего опыта при постановке Ваших инвестиционных целей..</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <a class="logo" href="#">logo</a>
+                    <ul class="footer__soclist">
+                        <li class="footer__socitem">
+                            <a class="footer__soclink" href="https://www.facebook.com/">
+                                <img class="footer__socicon" src="./img/facebook.svg" alt="facebook-icon">
+                            </a>
+                        </li>
+                        <li class="footer__socitem">
+                            <a class="footer__soclink" href="https://t.me/ruinvestingcom ">
+                                <img class="footer__socicon" src="./img/tg.svg" alt="tg-icon">
+                            </a>
+                        </li>
+                        <li class="footer__socitem">
+                            <a class="footer__soclink" href="https://www.youtube.com/">
+                                <img class="footer__socicon" src="./img/yt.svg" alt="yt-icon">
+                            </a>
+                        </li>
+                        <li class="footer__socitem">
+                            <a class="footer__soclink" href="https://twitter.com/?lang=en">
+                                <img class="footer__socicon" src="./img/x.svg" alt="x-icon">
+                            </a>
+                        </li>
+                        <li class="footer__socitem">
+                            <a class="footer__soclink" href="https://www.instagram.com/">
+                                <img class="footer__socicon" src="./img/insta.svg" alt="insta-icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <p data-i18n="footer.text1">Все права на копирование материалов данного сайта защищены и принадлежат "PO Trade". Любое использование материалов данного сайта должно быть согласовано с уполномоченным представителем "PO Trade", и содержать ссылку на настоящий ресурс. Любые сторонние Компании, относящиеся к категориям "Online broker" или "Online trading", не имеют права использовать как материалы данного сайта, так и любые, в том числе и искаженные написания "PO Trade", и в случае нарушения подлежат преследованию в соответствии с нормами законодательных актов о защите интеллектуальной собственности.</p>
+                    <p data-i18n="footer.text2">PO TRADE LTD не предоставляет услуги жителям стран ЕЭЗ, США, Великобритании, ОАЭ и Израиля.</p>
+                    <p data-i18n="footer.text3">PO TRADE LTD зарегистрирована в Rodney Bayside Building, Rodney Bay, Gros-Islet, St. Lucia с регистрационным номером 2019-00207.</p>
+                    <p data-i18n="footer.text4">PO TRADE LTD регулируется FMRRC (лицензия ЦРФ RU 0395 AA V0219) и MISA (лицензия T2022086).</p>
+                    <p data-i18n="footer.text5">Вся брокерская деятельность на данном сайте предоставляется PO TRADE LTD.</p>
+                </div>
+                <div class="footer__copy">
+                    <img class="footer__copy-img" src="./img/copy-img.svg" alt="copy-img">
+                    <p class="footer__copy-text">Copyright ©2023 PO TRADE</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
