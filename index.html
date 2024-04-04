@@ -15,8 +15,8 @@
                     <a class="logo" href="#">logo</a>
                     <div class="header__interface">
                         <select class="header__interface-lang">
-                            <option value="russian">Russian</option>
                             <option value="english">English</option>
+                            <option value="russian">Russian</option>
                         </select>
                         <button class="header__interface-auth" data-i18n="common.auth">Войти</button>
                     </div>
@@ -36,10 +36,12 @@
                         </div>
                         <div class="review__info">
                             <span class="review__info-title title animation-hide animation-to-left" data-i18n="review.title">Специальные условия для трейдеров из Гонконга</span>
-                            <a class="review__info-link link animation-hide animation-to-left" href="https://www.investing.com/">
-                                <span data-i18n="common.btn">НАЧАТЬ ТОРГОВЛЮ В ОДИН КЛИК</span>
-                                <img src="img/fingerprint.svg" alt="button-fingerprint">
-                            </a>
+                            <div class="review__link-wrapper">
+                                <a class="review__info-link link animation-hide animation-to-left" href="https://www.investing.com/">
+                                    <span data-i18n="common.btn">НАЧАТЬ ТОРГОВЛЮ В ОДИН КЛИК</span>
+                                    <img src="img/fingerprint.svg" alt="button-fingerprint">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -180,9 +182,11 @@
                         </div>
                         <div class="install__img">
                             <img src="./img/install-section.webp" alt="install-img">
-                            <a class="install__img-link link animation-hide animation-to-top" href="https://www.investing.com/">
-                                <span data-i18n="install.btn2">WITHDRAW NOW</span>
-                            </a>
+                            <div class="install__link-wrapper animation-hide animation-to-top">
+                                <a class="install__img-link link" href="https://www.investing.com/">
+                                    <span data-i18n="install.btn2">WITHDRAW NOW</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
