@@ -1,7 +1,7 @@
 @media(max-width: 1536px){
     .review{
-        &__img img {
-            margin-left: -350px;
+        &__img img:first-child {
+            margin-left: -530px;
         }
         &::before{
             top: 33%;
@@ -44,14 +44,15 @@
 }
 @media(max-width: 1024px){
     .review{
-        &__info {
-            max-width: 300px;
-        }
         &__inner{
             gap: 30px;
         }
-        &__img img {
-            margin-left: -100px;
+        &__img img:first-child {
+            display: none;
+        }
+        &__img img:nth-child(2) {
+            display: block;
+            margin-left: -150px;
             width: 550px;
             height: 367px;
         }
@@ -139,7 +140,7 @@
             font-size: 20px;
         }
         &__info-link{
-            width: 300px;
+            width: 315px;
             margin-top: 30px;
         }
         &__img img{
@@ -147,6 +148,9 @@
         }
         &__img.animation-to-right{transform: translateY(-100%);}
         &__info.animation-to-left{transform: translateY(-100%);}
+    }
+    .link{
+        padding: 14px 25px;
     }
     .link span {
         font-size: 13px;
@@ -219,7 +223,7 @@
 @media(max-width: 640px){
     .select2{
         &-container{ //block width
-            width: 123px!important;
+            width: 133px!important;
         }
         &-container &-selection--single &-selection__rendered{ //inner padding
             padding: 5px 3px 0 5px;
@@ -255,8 +259,11 @@
             max-width: 100%;
             margin-left: 0;
         }
-        &__img img{
-            margin-left: -55px;
+        &__img img:nth-child(2) {
+            margin-left: -60px;
+        }
+        &__img img:nth-child(2) .animation-hide, .animation-to-right {
+            all: unset;
         }
         &__info-link{
             margin-top: 20px;
@@ -318,6 +325,9 @@
             object-fit: cover;
             height: 523px;
         }
+        &__bg-inner::before{
+            left: -11%;
+        }
     }
     .why{
         &__list{
@@ -370,7 +380,10 @@
         padding-top: 50px;
     }
     .link{
-        padding: 17px 22px 17px;
+        padding: 14px 25px;
+    }
+    .logo{
+        font-size: 22px;
     }
 }
 // @media(max-width: 480px){}   

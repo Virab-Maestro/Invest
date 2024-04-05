@@ -1,5 +1,17 @@
 $( document ).ready(function() {
-    
+
+    // Save the choosen language
+    localStLang=localStorage.getItem("i18nextLng")
+    switch(localStLang){
+        case"ru":
+            localStLang="russian";
+            break;
+        case"en":
+            localStLang="english"
+            break;
+    }
+    $(`.header__interface-lang option[value='${localStLang}']`).prop("selected","true")
+
     // castomizing the header select
     function dropdownOption (state) {
         if (!state.id) {
